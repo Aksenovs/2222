@@ -10,23 +10,22 @@ public class Builder
         this.vozrast = vozrast;
         this.stag = stag;
     }
-double Postroit (){return vozrast;}
-int razrychit (){return stag;}
 
 }
 
 class Krovelhik extends Builder
 {
-    int krovlia;
+    int krovlia=5;
 
-    public Krovelhik(String name, double vozrast, int stag, int krovlia) {
+
+    public Krovelhik(String name, double vozrast, int stag) {
         super(name, vozrast, stag);
-        this.krovlia = krovlia;
+        Krovelhik A = new Krovelhik();
     }
+}
 
+class itog {
     public static void main(String[] args) {
-        Krovelhik A;
-        A = new Krovelhik("a");
+        System.out.println();
     }
-
 }
